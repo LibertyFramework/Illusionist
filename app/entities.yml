@@ -1,0 +1,6 @@
+
+customer:
+  name
+
+invoices:
+  owner: customer
