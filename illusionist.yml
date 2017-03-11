@@ -1,28 +1,5 @@
 
-demoApp:
-  type: Private
+app:
   name: My First App
-  home: Customer
-  user: admin
-  role:
-    - public
-    - private
-
-  db:
-    host:
-    dbname:
-    username:
-    password:
-    port:
-
-  entities:
-    include: app/entities.yml
-
-  menu:
-    file:
-    option:
-
-  acl:
-    admin:
-      customer.name.id: allow
+  home: /
 

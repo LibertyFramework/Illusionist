@@ -6,3 +6,6 @@ app/storage/
 .env.*.php
 .env.php
 .env
+producer
+composer.lock
+docker-compose.yml
