@@ -11,7 +11,7 @@ ini_set('display_startup_errors', true);
 
 require_once '../vendor/autoload.php';
 
-$app = new \App\Illusionist();
+$app = new App\Illusionist();
 
 $app->eat('../illusionist.yml');
 

@@ -6,11 +6,11 @@
 
 namespace App\Route;
 
-use Javanile\Illusionist\Route as LibertyRoute;
+use Javanile\Illusionist;
 
-class Route extends LibertyRoute
+class Routes
 {
-    public function __contruct($app)
+    public function register($app)
     {
         $app->get('/', [$this, 'getIndex']);
     }

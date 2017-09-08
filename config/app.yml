@@ -3,6 +3,8 @@ app:
   name: My First App
   home: /
 
+  include: database.yml
+
   page:
     home: People
     team: Team

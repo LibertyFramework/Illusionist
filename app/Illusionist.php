@@ -24,22 +24,26 @@ class Illusionist extends SlimApp
      */
     public function eat($filename)
     {
-        $apps = Yaml::resolve($filename);
+        $code = Yaml::resolve($filename);
 
-        $routes['home'] = [];
+        echo '<pre>';
+        var_dump($code);
+        echo '</pre>';
 
-        foreach ($apps as $app => $settings) {
-            $home = isset($settings['home']) ? $settings['home'] : '/';
+        foreach ($code as $app => $settings) {
+            $home = isset($settings['home']) ? '/'.trim($settings['home'],'/') : '/';
 
-            if (!isset($routes['home'][$home])) {
-                $routes['home'][$home] = $app;
+            if (!isset($this->routes[$home])) {
+                $this->routes[$home] = $app;
+                $this->get($home, [$this, 'getHome']);
             } else {
-                throw new Exception("Duplicate home.");
+                throw new Exception("Duplicate routes: {$home}");
             }
         }
+    }
 
-        foreach ($routes['home'] as $pattern => $app) {
-            $this->get($pattern, '\\App\\PrivateApplication');
-        }
+    public function getHome()
+    {
+        echo '<h1>Home</h1>';
     }
 }

@@ -1,11 +1,6 @@
 
-##
-##
-##
+## Load main application
 include: config/app.yml
 
-##
-##
-##
+## Load administration panel
 include: config/panel.yml
-

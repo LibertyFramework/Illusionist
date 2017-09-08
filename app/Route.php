@@ -6,9 +6,9 @@
 
 namespace App\Route;
 
-use Javanile\Illusionist\Route as LibertyRoute;
+use Javanile\Illusionist;
 
-class Route extends LibertyRoute
+class Route
 {
     public function __contruct($app)
     {
