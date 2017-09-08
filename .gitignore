@@ -1,6 +1,7 @@
-.idaa/
+.idea/
 docker/
 vendor/
+repository/
 node_modules/
 app/storage/
 .env.*.php
