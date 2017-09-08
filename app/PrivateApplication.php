@@ -5,20 +5,19 @@
 
 namespace App;
 
-use Javanile\Liberty\App\PrivateApplication as Application;
-
-class PrivateApplication extends Application
+class PrivateApplication
 {
     /**
      * @param $args
      *
      */
-    public function __contruct($args)
+    public function __contruct()
     {
-        //
-        parent::__construct($args);
+        echo "ASD";
+    }
 
-        //
-
+    public function __invoke()
+    {
+        echo "ggg";
     }
 }

@@ -13,4 +13,6 @@ require_once '../vendor/autoload.php';
 
 $app = new \App\Illusionist();
 
-$app->parse('../illusionist.yml');
+$app->eat('../illusionist.yml');
+
+$app->run();
