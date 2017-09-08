@@ -9,3 +9,4 @@ app/storage/
 producer
 composer.lock
 docker-compose.yml
+lamp/
