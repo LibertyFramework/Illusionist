@@ -1,5 +1,5 @@
 {
-    "name": "libertyframework/illusionit",
+    "name": "javanile/illusionit",
     "autoload": {
         "psr-4": {
             "App\\": "app/"
