@@ -1,18 +1,11 @@
 
-app:
-  name: My First App
-  home: /
+##
+##
+##
+include: config/app.yml
 
-  page:
-    home: People
-    team: Team
+##
+##
+##
+include: config/panel.yml
 
-  entity:
-    People:
-      name: string
-      surname: string
-      age: int
-    Team:
-      name: string
-      league: string
-      people: People*

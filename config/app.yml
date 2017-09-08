@@ -1,0 +1,18 @@
+
+app:
+  name: My First App
+  home: /
+
+  page:
+    home: People
+    team: Team
+
+  entity:
+    People:
+      name: string
+      surname: string
+      age: int
+    Team:
+      name: string
+      league: string
+      people: People*
